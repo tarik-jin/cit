@@ -261,6 +261,7 @@ bool Var::setInit()
 			ptrVal=init->name;//字符指针变量初始值=常量字符串的名字
 		else//基本类型
 			intVal=init->intVal;//拷贝数值数据
+		return true;
 	}
 	else{//初始值不是常量
 		if(scopePath.size()==1)//被初始化变量是全局变量
