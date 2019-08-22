@@ -25,7 +25,7 @@ SymTab::SymTab()
 		此处产生特殊的常量void，1,4
 	*/
 	voidVar=new Var();//void变量
-	zero=new Var(1);//常量0
+	zero=new Var(0);//常量0
 	one=new Var(1);//常量1
 	four=new Var(4);//常量4
 	addVar(voidVar);//让符号表管理这些特殊变量
